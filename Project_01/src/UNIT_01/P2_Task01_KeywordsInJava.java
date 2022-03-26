@@ -26,7 +26,7 @@ not used => *    [goto* , const*]
 */
 
 
-package Unit_01;
+package UNIT_01;
 
 public class P2_Task01_KeywordsInJava {
 
