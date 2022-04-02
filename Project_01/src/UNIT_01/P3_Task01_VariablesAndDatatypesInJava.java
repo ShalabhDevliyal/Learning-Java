@@ -1,7 +1,5 @@
-package UNIT_01;
-
 /* Types of variables:
-	   - In Java, there are three types of variables:
+        - In Java, there are three types of variables:
 
 	. Local Variables- declared inside the body of a method
 
@@ -35,8 +33,9 @@ package UNIT_01;
  *  | char   			      2 bytes      |
  *  |----------------------------------------------|
 
+*/
 
-	*/
+package UNIT_01;
 public class P3_Task01_VariablesAndDatatypesInJava {
 	static int q = 11;
 	int p = 10;
