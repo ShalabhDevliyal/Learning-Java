@@ -16,8 +16,24 @@ package UNIT_01;
 	  - These static variables should be initialized first, before the initialization of any
 
 	 -Data Types in Java?
-
-	  +Reference OneNote
+	 * DATATYPES :>
+ * 	=>Data types in Java are defined as specifiers that allocate different sizes and types of values that can be stored in the 
+ *    variable or an identifier.
+ *    
+ *    Ex : int a = 10;
+ *         int(data type) a (identifier/variable name) = 10(value);
+ *         
+ *  |----------------------------------------------|      
+ *  | DATA TYPE                       DEFAULT SIZE |
+ *  | byte                            1 byte       |
+ *  | short			      2 bytes      | 
+ *  | int 			      4 bytes      |
+ *  | long			      8 bytes      |
+ *  | float			      4 bytes      |
+ *  | double			      8 bytes      |
+ *  | boolean			      1 byte       |
+ *  | char   			      2 bytes      |
+ *  |----------------------------------------------|
 
 
 	*/
