@@ -18,45 +18,62 @@ public class P8_Task01_StringOperations {
 		QuestionsOnString obj = new QuestionsOnString();
 
 		String s1 = new String("75457");
-		String s2 = new String("7545a");
+		String s2 = new String("75457");
 
 		obj.palindromeOrNot(s1);
-		obj.reverseOfAString(s1);
-		obj.stringEqualOrNot(s1, s2);
-
+		obj.reverseOfAString(s2);
+     	obj.stringEqualOrNot(s1, s2);
 	}
-
 }
 
 class QuestionsOnString {
 
 	void palindromeOrNot(String s) {
-		// Write Logic Here!
-		String reverses="";
-		 int strLength = s.length();
+		int n = s.length();
+		int i = 0, c = 0, j = n - 1;
 
-		    for (int i = (strLength - 1); i >=0; --i) {
-		      reverses = reverses + s.charAt(i);
-		    }
+		while (i <= j) {
+			if (s.charAt(i) != s.charAt(j)) {
+				c = 1;
+				break;
+			}
+			i++;
+			j--;
+		}
 
-		    if (s.toLowerCase().equals(reverses.toLowerCase())) {
-		      System.out.println(s + " is a Palindrome String.");
-		    }
-		    else {
-		      System.out.println(s + " is not a Palindrome String.");
-		    }
-		
-		
-
+		if (c == 0) {
+			System.out.println("Yes, it is a palindrome.");
+		} else {
+			System.out.println("No, it is not a palindrome.");
+		}
 	}
 
 	void reverseOfAString(String s) {
-		// Write Logic Here!
-
-	}
-	
-	void stringEqualOrNot(String s1,String s2) {
-		// Write Logic Here!
 		
+		int n=s.length() , i=n-1;
+		String str="";
+
+		while( i >= 0 ) {
+			str += s.charAt(i);
+			i--;
+		}
+		System.out.print("Reversed string : ");
+		System.out.println(str); // a5457
+	}
+
+	void stringEqualOrNot(String s1, String s2) {
+		int n1 = s1.length() , c=0;
+
+		for( int i=0 ; i<n1 ; i++ ){
+			if (s1.charAt(i) != s2.charAt(i)) {
+				c = 1;
+				break;
+			}
+		}
+		if (c == 0) {
+			System.out.println("Yes, they are equal.");
+		} else {
+			System.out.println("No, they are not equal.");
+		}
 	}
 }
