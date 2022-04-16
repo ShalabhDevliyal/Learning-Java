@@ -24,7 +24,7 @@ Type of inheritance:
 	-	parameterized constructor
 	
 */
-public class P8_Task01_InheritanceInJava {
+public class P08_Task01_InheritanceInJava {
 	
 	public static void main(String[] args)
 	{
