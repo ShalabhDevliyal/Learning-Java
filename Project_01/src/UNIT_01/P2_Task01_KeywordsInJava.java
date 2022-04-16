@@ -29,23 +29,31 @@ not used => *    [goto* , const*]
 package UNIT_01;
 
 public class P2_Task01_KeywordsInJava {
-
 	public static void main(String[] args) {
-		System.out.println("Java Keywords!");
+		/*
+		 	*50 keywords
+		 	*reserved words (meanings are already defined by the compiler)
+		 	*we are not supposed to use keywords as:
+		 		*method name
+		 		*variables
+		 		*objects 
+		*/
+		void int() { //keywords can not be used as method name 
+			System.out.println("hello");
+		}
 		
-		//Syntax error on token "int", delete this token
-		Test int = new Test();
+		int int=124; //keywords can not be used as variable name
+		
+		abc int=new abc();//keywords can not be used as object name 
+		int.a=10;
+		System.out.println(int.a);
 	}
-	
-	//Syntax error on token "int", Identifier expected
-	void int() {
-			
-	}
-	
-	//Syntax error on token "double", invalid VariableDeclaratorId
-	int double = 10;
 }
-
-class Test{
-	int x=10;
+class int //keywords can not be used as class name
+{
+	int a;
+}
+class abc
+{
+	int a;
 }
