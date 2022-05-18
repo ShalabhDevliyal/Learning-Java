@@ -10,10 +10,10 @@ Q1- WAP which would contain 6 objects, of a class
 public class Q1{
 
 	public static void main(String[] args) {
-		Student arr[]=new Student[6];
+		Solution arr[]=new Solution[6];
 		for(int i=0;i<6;i++)
 		{
-			arr[i]=new Student();
+			arr[i]=new Solution();
 		}
 		float avg=0;
 		for(int i=0;i<6;i++)
