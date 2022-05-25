@@ -1,5 +1,5 @@
 package UNIT_03;
-
+import java.util.Scanner;
 /*
  * Multiprocessing :-
  *                 - parallel processing.
@@ -111,6 +111,9 @@ class MultiThreading
  class T1 implements Runnable {
 	 
 	 public void run() {
+		 int a;
+		 Scanner sc=new Scanner(System.in);
+		 a=sc.nextInt();
 		 for(int i=0;i<10;i++)
 		 {
 			 System.out.println("Hue HUE T1");
