@@ -142,7 +142,7 @@ class T3 implements Runnable {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		 System.out.println("HUE HUE T3");
+		 System.out.println("T3 is Done");
 		 
 		 
 	 }
