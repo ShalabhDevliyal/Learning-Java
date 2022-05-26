@@ -3,7 +3,7 @@ package UNIT_03;
 
 /* -
  * 
- * Inter-thread Communication:
+ * InterThread Communication:
    - Threads uses wait, notify() and notifyAll() methods from Object Clas
    - command + Shift + T -> Find object class and see its methods
    - command + O -> all methods
