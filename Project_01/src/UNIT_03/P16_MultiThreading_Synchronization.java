@@ -18,6 +18,7 @@ public class P16_MultiThreading_Synchronization {
 	public static void main(String[] args) throws InterruptedException {
 
 		WebCount obj = new WebCount();
+		System.out.println(Thread.currentThread().getName());
 
 		Thread threadOne = new Thread(new Runnable() {
 			@Override
@@ -63,7 +64,7 @@ class WebCount {
 	//You want T1 to complete first and then T2 
 	public synchronized void webcount() {
 		
-		//If not synchronized then, T1 and T2 may read the same value of count at 
+		//If not synchronized then, T1 and T 2 may read the same value of count at 
 		//the same time and may increment same time as well
 		count++;
 	}
