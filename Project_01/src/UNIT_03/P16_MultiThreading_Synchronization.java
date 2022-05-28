@@ -8,7 +8,10 @@ we can use synchronized block.
 
 //You want T1 to complete first and then T2, then we have to use synchronization keyword
 
-
+/* -- Q1>  Where and when to use synchronization keyword?
+ * -- Q2>  Where and when to use join method?
+ * -- Q3>  What is a shared resource?
+ */
 
 public class P16_MultiThreading_Synchronization {
 
