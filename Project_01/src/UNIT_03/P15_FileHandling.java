@@ -23,8 +23,8 @@ public class P15_FileHandling {
 
 		ABCDEF obj = new ABCDEF();
 		obj.takeInputFromAFile();
-		// obj.saveOutputIntoAFile();
-		// obj.saveLogOfProgram();
+		obj.saveOutputIntoAFile();
+		obj.saveLogOfProgram();
 
 	}
 
@@ -36,7 +36,7 @@ class ABCDEF {
 
 	void takeInputFromAFile() throws IOException {
 
-		String path = "/Users/shalabhdevliyal/git/Java/Learning_Java/src/Unit_03/Input.txt";
+		String path = "C:\\Users\\shala\\git\\Learning-Java\\Project_01\\src\\UNIT_03\\input.txt";
 		File file = new File(path);
 
 		BufferedReader br = new BufferedReader(new FileReader(file));
@@ -69,7 +69,7 @@ class ABCDEF {
 		FileWriter myObj = null;
 
 		try {
-			myObj = new FileWriter("output.txt");
+			myObj = new FileWriter("C:\\Users\\shala\\git\\Learning-Java\\Project_01\\src\\UNIT_03\\output.txt");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -95,7 +95,7 @@ class ABCDEF {
 		FileWriter myObj = null;
 
 		try {
-			myObj = new FileWriter("log.txt",true);
+			myObj = new FileWriter("C:\\Users\\shala\\git\\Learning-Java\\Project_01\\src\\UNIT_03\\log.txt",true);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
